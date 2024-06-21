@@ -31,6 +31,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
+                    echo "Deploying image: $IMAGEN:$BUILD_NUMBER"
                     docker.withRegistry( '', USUARIO ) {
                         newApp.push()
                     }
