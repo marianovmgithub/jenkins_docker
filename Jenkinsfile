@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        IMAGEN = "marianovmgithub/myapp"
+        IMAGEN = "marianovmdocker/myapp"
         USUARIO = 'USER_DOCKERHUB'
     }
     agent any
